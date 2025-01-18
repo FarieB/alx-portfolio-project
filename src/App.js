@@ -1,17 +1,17 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Register from './Register';
-import Dashboard from './Dashboard';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Register from './components/Register';
+import Dashboard from './components/Dashboard';
 
 function App() {
   return (
     <Router>
       <div>
-        <Switch>
-          <Route path="/register" component={Register} />
-          <Route path="/dashboard" component={Dashboard} />
+        <Routes>
+          <Route path="/register" element={<Register />} />
+          <Route path="/dashboard" element={<Dashboard />} />
           {/* Add other routes here */}
-        </Switch>
+        </Routes>
       </div>
     </Router>
   );

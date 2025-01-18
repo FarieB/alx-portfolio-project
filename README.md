@@ -87,7 +87,7 @@ AlxDeliver is a front-end web application designed to simulate a delivery servic
 - **Description**: A delivery service platform where users can register, log in, select services, schedule deliveries, and track their packages.
 - **Technologies Used**: React, Redux, SASS, JSON Server, React Router.
 
-## Week 1 Progress
+## WEEK 1 PROGRESS
 
 ### Accomplishments
 - Set up the initial project structure using `create-react-app`.
@@ -95,4 +95,55 @@ AlxDeliver is a front-end web application designed to simulate a delivery servic
 - Created the basic routing structure with `React Router`.
 
 ### Directory Structure
+alx-portfolio-project/
+├── node_modules/       # Directory for installed packages
+├── public/             # Public directory for static files
+│   ├── index.html      # Main HTML file
+│   └── favicon.ico     # Default favicon
+├── src/                # Source directory for React components and assets
+│   ├── App.css         # Styles for the App component
+│   ├── App.js          # Main App component
+│   ├── App.test.js     # Default test file for App component
+│   ├── index.css       # Global styles
+│   ├── index.js        # Entry point for the React app
+│   ├── logo.svg        # Default logo
+│   └── reportWebVitals.js # Performance metrics
+├── .gitignore          # Git ignore file
+├── package.json        # Project metadata and dependencies
+└── README.md           # Project README file (auto-generated)
+
+
+## WEEK 2 PROGRESS
+
+## DeliveryServiceList Component
+
+### Description
+The `DeliveryServiceList` component displays a list of available delivery services and allows users to sort the services based on price, delivery time, or rating. It fetches mock data of services and provides a simple interface for filtering the list according to user preferences.
+
+### Features
+- **Service Listing**: Displays a list of delivery services with details such as name, price, delivery time, and rating.
+- **Sorting Options**: Users can sort the services by price, delivery time, or rating through a dropdown selection.
+
+### Implementation
+- **State Management**: Uses React `useState` and `useEffect` hooks to manage the list of services and handle filtering logic.
+- **Filtering Logic**: The component sorts the services array based on the selected filter criteria and updates the displayed list accordingly.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
