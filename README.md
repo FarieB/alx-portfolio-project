@@ -128,22 +128,20 @@ The `DeliveryServiceList` component displays a list of available delivery servic
 - **State Management**: Uses React `useState` and `useEffect` hooks to manage the list of services and handle filtering logic.
 - **Filtering Logic**: The component sorts the services array based on the selected filter criteria and updates the displayed list accordingly.
 
+## DeliveryForm Component
 
+### Description
+The `DeliveryForm` component allows users to schedule a delivery by providing details such as pickup and drop-off locations, package details, and the preferred delivery time. It includes form validation to ensure that all required fields are filled out correctly.
 
+### Features
+- **Form Fields**: Includes input fields for pickup location, drop-off location, package weight, delivery instructions, and preferred delivery time.
+- **Real-Time Validation**: Provides immediate feedback on form fields to ensure data accuracy and completeness.
+- **Submit Handler**: On form submission, the component simulates sending the data to a backend service using a mock API.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+### Implementation
+- **State Management**: Utilizes React `useState` to manage the form input values and validation states.
+- **Validation Logic**: Includes functions to validate each form field, ensuring that all inputs meet the required criteria before allowing submission.
+- **Mock API Integration**: Simulates form data submission to a backend using a mock API, demonstrating the form's interaction with external services.
 
 
 
