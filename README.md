@@ -144,4 +144,41 @@ The `DeliveryForm` component allows users to schedule a delivery by providing de
 - **Mock API Integration**: Simulates form data submission to a backend using a mock API, demonstrating the form's interaction with external services.
 
 
+## Integration of DeliveryServiceList and DeliveryForm in App.js
+
+### Description
+The `App.js` file integrates the `DeliveryServiceList` and `DeliveryForm` components to provide users with a seamless experience for browsing delivery services and scheduling deliveries. These components are essential parts of the application's core functionality, enabling users to view available services and book deliveries directly.
+
+### Components
+- **DeliveryServiceList**: Displays a list of available delivery services with details such as price, delivery time, and ratings. It includes features for filtering and sorting services based on user preferences.
+- **DeliveryForm**: Provides a form for users to schedule a delivery, inputting necessary details like pickup and drop-off locations, package details, and the desired delivery time.
+
+### Integration Steps
+1. **Import Components**: Both components are imported into `App.js` to be rendered within the application's main structure.
+2. **Route Setup**: React Router is used to set up distinct routes for the `DeliveryServiceList` and `DeliveryForm` components, allowing users to navigate between viewing services and scheduling a delivery.
+3. **Rendering Components**: The components are conditionally rendered based on the application's routing setup.
+
+### Code Snippet
+Below is a code example demonstrating how `DeliveryServiceList` and `DeliveryForm` are integrated into `App.js`:
+
+```javascript
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import DeliveryServiceList from './components/DeliveryServiceList';
+import DeliveryForm from './components/DeliveryForm';
+
+function App() {
+  return (
+    <Router>
+      <div>
+        <Routes>
+          <Route path="/" element={<DeliveryServiceList />} />
+          <Route path="/schedule-delivery" element={<DeliveryForm />} />
+        </Routes>
+      </div>
+    </Router>
+  );
+}
+
+export default App;
 
